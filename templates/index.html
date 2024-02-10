@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>weather</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<form  action="/" method="GET">
+<h1>Instagram</h1>
+
+
+<label >Username:</label>
+<input name="username"></input>
+<button>submit</button>
+ <br>
+  <br>
+
+<label>Bio:</label><label>{{data[0]}}</label> <br><br>
+  <label>Follower:</label><label>{{data[1]}}</label> <br><br>
+  <label>Followees:</label><label>{{data[2]}}</label> <br><br>
+  <label>Count:</label><label>{{data[3]}}</label> <br><br>
+
+
+</form>
+</body>
+
+</html>
