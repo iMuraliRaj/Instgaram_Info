@@ -9,26 +9,9 @@ import pandas as pd
 app = Flask(__name__)
 
 
-@app.route('/',methods=['POST','GET'])
+@app.route('/')
 def weather():
-    username=request.args.get("username")
-
-    # Creating an instance of the Instaloader class
-    bot = instaloader.Instaloader()
-
-    try:
-        # Loading a profile from an Instagram handle
-        profile = instaloader.Profile.from_username(bot.context, username)
-
-        details=[]
-        details.append(profile.biography)
-        details.append(profile.followers)
-        details.append(profile.followees)
-        details.append(profile.mediacount)
-    except:
-        details = ["","","",""]
-
-    return render_template('index.html',data=details)
+    return "Murali"
 
 
 
